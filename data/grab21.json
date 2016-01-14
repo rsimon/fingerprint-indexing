@@ -1,0 +1,23 @@
+{
+  "name": "Grab 21",
+  "date": { "from": -450, "to": -400 },
+  "fingerprint_ceramic": {
+    "zubereitung" : {
+      "lokal_indigen": 1
+    },
+    "getraenke_servieren": {
+      "lokal_indigen": 1,
+      "imitat_hybrid": 1
+    },
+    "getraenke_konsumieren": {
+      "imitat_hybrid": 1,
+      "griechisch_import": 1
+    },
+    "bifunktionale_gefaesse": {
+      "lokal_indigen": 2
+    },
+    "sonstige": {
+      "lokal_indigen": 1
+    }
+  }
+}

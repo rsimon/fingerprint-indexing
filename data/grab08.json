@@ -1,0 +1,21 @@
+{
+  "name": "Grab 08",
+  "date": { "from": -450, "to": -400 },
+  "fingerprint_ceramic": {
+    "kurzzeit_lagerung_transport": {
+      "imitat_hybrid": 1
+    },
+    "zubereitung" : {
+      "lokal_indigen": 1
+    },
+    "getraenke_servieren": {
+      "streifenware": 1
+    },
+    "getraenke_konsumieren": {
+      "griechisch_import": 1
+    },
+    "bifunktionale_gefaesse": {
+      "lokal_indigen": 1
+    }
+  }
+}

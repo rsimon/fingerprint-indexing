@@ -1,0 +1,24 @@
+{
+  "name": "Grab 36",
+  "date": { "from": -500, "to": -450 },
+  "fingerprint_ceramic": {
+    "kurzzeit_lagerung_transport": {
+      "lokal_indigen": 1
+    },
+    "zubereitung" : {
+      "lokal_indigen": 1,
+      "streifenware": 1
+    },
+    "getraenke_servieren": {
+      "imitat_hybrid": 1,
+      "lokal_indigen": 2,
+      "streifenware": 1
+    },
+    "getraenke_konsumieren": {
+      "griechisch_import": 1
+    },
+    "sonstige": {
+      "lokal_indigen": 1
+    }
+  }
+}

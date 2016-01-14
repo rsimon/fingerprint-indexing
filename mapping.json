@@ -1,0 +1,131 @@
+{
+  "unit": {
+    "properties": {
+      "name": { "type": "string" },
+      "date": {
+        "type": "nested",
+        "properties": {
+          "from": { "type": "integer" },
+          "to": { "type": "integer" }
+        }
+      },
+      "fingerprint_ceramic": {
+        "type": "nested",
+        "properties": {
+          "langzeitlagerung_transport": {
+            "type": "nested",
+            "properties": {
+              "lokal_indigen": { "type": "integer" },
+              "ripacandida": { "type": "integer" },
+              "ofanto-subgeometrisch": { "type": "integer" },
+              "ruvo_satriano": { "type": "integer" },
+              "attisch": { "type": "integer" },
+              "imitat_hybrid": { "type": "integer" },
+              "griechisch_import": { "type": "integer" },
+              "streifenware": { "type": "integer" },
+              "grobkeramik_impasto": { "type": "integer" }
+            }
+          },
+          "kurzzeitlagerung_transport": {
+            "type": "nested",
+            "properties": {
+              "lokal_indigen": { "type": "integer" },
+              "ripacandida": { "type": "integer" },
+              "ofanto-subgeometrisch": { "type": "integer" },
+              "ruvo_satriano": { "type": "integer" },
+              "attisch": { "type": "integer" },
+              "imitat_hybrid": { "type": "integer" },
+              "griechisch_import": { "type": "integer" },
+              "streifenware": { "type": "integer" },
+              "grobkeramik_impasto": { "type": "integer" }
+            }
+          },
+          "zubereitung": {
+            "type": "nested",
+            "properties": {
+              "lokal_indigen": { "type": "integer" },
+              "ripacandida": { "type": "integer" },
+              "ofanto-subgeometrisch": { "type": "integer" },
+              "ruvo_satriano": { "type": "integer" },
+              "attisch": { "type": "integer" },
+              "imitat_hybrid": { "type": "integer" },
+              "griechisch_import": { "type": "integer" },
+              "streifenware": { "type": "integer" },
+              "grobkeramik_impasto": { "type": "integer" }
+            }
+          },
+          "getraenke_servieren": {
+            "type": "nested",
+            "properties": {
+              "lokal_indigen": { "type": "integer" },
+              "ripacandida": { "type": "integer" },
+              "ofanto-subgeometrisch": { "type": "integer" },
+              "ruvo_satriano": { "type": "integer" },
+              "attisch": { "type": "integer" },
+              "imitat_hybrid": { "type": "integer" },
+              "griechisch_import": { "type": "integer" },
+              "streifenware": { "type": "integer" },
+              "grobkeramik_impasto": { "type": "integer" }
+            }
+          },
+          "getraenke_konsumieren": {
+            "type": "nested",
+            "properties": {
+              "lokal_indigen": { "type": "integer" },
+              "ripacandida": { "type": "integer" },
+              "ofanto-subgeometrisch": { "type": "integer" },
+              "ruvo_satriano": { "type": "integer" },
+              "attisch": { "type": "integer" },
+              "imitat_hybrid": { "type": "integer" },
+              "griechisch_import": { "type": "integer" },
+              "streifenware": { "type": "integer" },
+              "grobkeramik_impasto": { "type": "integer" }
+            }
+          },
+          "bifunktionale_gefaesse": {
+            "type": "nested",
+            "properties": {
+              "lokal_indigen": { "type": "integer" },
+              "ripacandida": { "type": "integer" },
+              "ofanto-subgeometrisch": { "type": "integer" },
+              "ruvo_satriano": { "type": "integer" },
+              "attisch": { "type": "integer" },
+              "imitat_hybrid": { "type": "integer" },
+              "griechisch_import": { "type": "integer" },
+              "streifenware": { "type": "integer" },
+              "grobkeramik_impasto": { "type": "integer" }
+            }
+          },
+          "duftstoffe": {
+            "type": "nested",
+            "properties": {
+              "lokal_indigen": { "type": "integer" },
+              "ripacandida": { "type": "integer" },
+              "ofanto-subgeometrisch": { "type": "integer" },
+              "ruvo_satriano": { "type": "integer" },
+              "attisch": { "type": "integer" },
+              "imitat_hybrid": { "type": "integer" },
+              "griechisch_import": { "type": "integer" },
+              "streifenware": { "type": "integer" },
+              "grobkeramik_impasto": { "type": "integer" }
+            }
+          },
+          "sonstige": {
+            "type": "nested",
+            "properties": {
+              "lokal_indigen": { "type": "integer" },
+              "ripacandida": { "type": "integer" },
+              "ofanto-subgeometrisch": { "type": "integer" },
+              "ruvo_satriano": { "type": "integer" },
+              "attisch": { "type": "integer" },
+              "imitat_hybrid": { "type": "integer" },
+              "griechisch_import": { "type": "integer" },
+              "streifenware": { "type": "integer" },
+              "grobkeramik_impasto": { "type": "integer" }
+            }
+          }
+        }
+      }
+    }
+  }
+}

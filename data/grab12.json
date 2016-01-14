@@ -1,0 +1,16 @@
+{
+  "name": "Grab 12",
+  "date": { "from": -600, "to": -550 },
+  "fingerprint_ceramic": {
+    "zubereitung" : {
+      "lokal_indigen": 1
+    },
+    "getraenke_servieren": {
+      "lokal_indigen": 1,
+      "ruvo_satriano": 1
+    },
+    "getraenke_konsumieren": {
+      "imitat_hybrid": 1
+    }
+  }
+}

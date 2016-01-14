@@ -1,0 +1,15 @@
+{
+  "name": "Grab 11",
+  "date": { "from": -550, "to": -500 },
+  "fingerprint_ceramic": {
+    "zubereitung" : {
+      "lokal_indigen": 1
+    },
+    "getraenke_servieren": {
+      "ruvo_satriano": 1
+    },
+    "getraenke_konsumieren": {
+      "ripacandida": 1
+    }
+  }
+}
