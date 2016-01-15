@@ -1,0 +1,227 @@
+{
+  "assemblage": {
+    "properties": {
+      "sector": { "type": "string" },
+      "layer_context": { "type": "string" },
+      "date": {
+        "properties": {
+          "from": { "type": "integer" },
+          "to": { "type": "integer" }
+        }
+      },
+      "fp_ceramic": {
+        "properties": {
+          "longterm_storage": {
+            "properties": {
+              "local_mono_fine": { "type": "double" },
+              "local_mono_coarse": { "type": "double" },
+              "local_matt_painted": { "type": "double" },
+              "local_impressed": { "type": "double" },
+              "local_black_glazed": { "type": "double" },
+              "regional_mono_fine": { "type": "double" },
+              "regional_mono_coarse": { "type": "double" },
+              "regional_matt_painted": { "type": "double" },
+              "regional_impressed": { "type": "double" },
+              "regional_black_glazed": { "type": "double" },
+              "loc_reg_mono_fine": { "type": "double" },
+              "loc_reg_mono_coarse": { "type": "double" },
+              "loc_reg_matt_painted": { "type": "double" },
+              "loc_reg_impressed": { "type": "double" },
+              "loc_reg_black_glazed": { "type": "double" }
+            }
+          },
+          "shortterm_storage": {
+            "properties": {
+              "local_mono_fine": { "type": "double" },
+              "local_mono_coarse": { "type": "double" },
+              "local_matt_painted": { "type": "double" },
+              "local_impressed": { "type": "double" },
+              "local_black_glazed": { "type": "double" },
+              "regional_mono_fine": { "type": "double" },
+              "regional_mono_coarse": { "type": "double" },
+              "regional_matt_painted": { "type": "double" },
+              "regional_impressed": { "type": "double" },
+              "regional_black_glazed": { "type": "double" },
+              "loc_reg_mono_fine": { "type": "double" },
+              "loc_reg_mono_coarse": { "type": "double" },
+              "loc_reg_matt_painted": { "type": "double" },
+              "loc_reg_impressed": { "type": "double" },
+              "loc_reg_black_glazed": { "type": "double" }
+            }
+          },
+          "preparation_cooking": {
+            "properties": {
+              "local_mono_fine": { "type": "double" },
+              "local_mono_coarse": { "type": "double" },
+              "local_matt_painted": { "type": "double" },
+              "local_impressed": { "type": "double" },
+              "local_black_glazed": { "type": "double" },
+              "regional_mono_fine": { "type": "double" },
+              "regional_mono_coarse": { "type": "double" },
+              "regional_matt_painted": { "type": "double" },
+              "regional_impressed": { "type": "double" },
+              "regional_black_glazed": { "type": "double" },
+              "loc_reg_mono_fine": { "type": "double" },
+              "loc_reg_mono_coarse": { "type": "double" },
+              "loc_reg_matt_painted": { "type": "double" },
+              "loc_reg_impressed": { "type": "double" },
+              "loc_reg_black_glazed": { "type": "double" }
+            }
+          },
+          "food": {
+            "properties": {
+              "local_mono_fine": { "type": "double" },
+              "local_mono_coarse": { "type": "double" },
+              "local_matt_painted": { "type": "double" },
+              "local_impressed": { "type": "double" },
+              "local_black_glazed": { "type": "double" },
+              "regional_mono_fine": { "type": "double" },
+              "regional_mono_coarse": { "type": "double" },
+              "regional_matt_painted": { "type": "double" },
+              "regional_impressed": { "type": "double" },
+              "regional_black_glazed": { "type": "double" },
+              "loc_reg_mono_fine": { "type": "double" },
+              "loc_reg_mono_coarse": { "type": "double" },
+              "loc_reg_matt_painted": { "type": "double" },
+              "loc_reg_impressed": { "type": "double" },
+              "loc_reg_black_glazed": { "type": "double" }
+            }
+          },
+          "mixing_drinks": {
+            "properties": {
+              "local_mono_fine": { "type": "double" },
+              "local_mono_coarse": { "type": "double" },
+              "local_matt_painted": { "type": "double" },
+              "local_impressed": { "type": "double" },
+              "local_black_glazed": { "type": "double" },
+              "regional_mono_fine": { "type": "double" },
+              "regional_mono_coarse": { "type": "double" },
+              "regional_matt_painted": { "type": "double" },
+              "regional_impressed": { "type": "double" },
+              "regional_black_glazed": { "type": "double" },
+              "loc_reg_mono_fine": { "type": "double" },
+              "loc_reg_mono_coarse": { "type": "double" },
+              "loc_reg_matt_painted": { "type": "double" },
+              "loc_reg_impressed": { "type": "double" },
+              "loc_reg_black_glazed": { "type": "double" }
+            }
+          },
+          "serving_drinks": {
+            "properties": {
+              "local_mono_fine": { "type": "double" },
+              "local_mono_coarse": { "type": "double" },
+              "local_matt_painted": { "type": "double" },
+              "local_impressed": { "type": "double" },
+              "local_black_glazed": { "type": "double" },
+              "regional_mono_fine": { "type": "double" },
+              "regional_mono_coarse": { "type": "double" },
+              "regional_matt_painted": { "type": "double" },
+              "regional_impressed": { "type": "double" },
+              "regional_black_glazed": { "type": "double" },
+              "loc_reg_mono_fine": { "type": "double" },
+              "loc_reg_mono_coarse": { "type": "double" },
+              "loc_reg_matt_painted": { "type": "double" },
+              "loc_reg_impressed": { "type": "double" },
+              "loc_reg_black_glazed": { "type": "double" }
+            }
+          },
+          "consuming_drinks": {
+            "properties": {
+              "local_mono_fine": { "type": "double" },
+              "local_mono_coarse": { "type": "double" },
+              "local_matt_painted": { "type": "double" },
+              "local_impressed": { "type": "double" },
+              "local_black_glazed": { "type": "double" },
+              "regional_mono_fine": { "type": "double" },
+              "regional_mono_coarse": { "type": "double" },
+              "regional_matt_painted": { "type": "double" },
+              "regional_impressed": { "type": "double" },
+              "regional_black_glazed": { "type": "double" },
+              "loc_reg_mono_fine": { "type": "double" },
+              "loc_reg_mono_coarse": { "type": "double" },
+              "loc_reg_matt_painted": { "type": "double" },
+              "loc_reg_impressed": { "type": "double" },
+              "loc_reg_black_glazed": { "type": "double" }
+            }
+          },
+          "perfumes_fragrances": {
+            "properties": {
+              "local_mono_fine": { "type": "double" },
+              "local_mono_coarse": { "type": "double" },
+              "local_matt_painted": { "type": "double" },
+              "local_impressed": { "type": "double" },
+              "local_black_glazed": { "type": "double" },
+              "regional_mono_fine": { "type": "double" },
+              "regional_mono_coarse": { "type": "double" },
+              "regional_matt_painted": { "type": "double" },
+              "regional_impressed": { "type": "double" },
+              "regional_black_glazed": { "type": "double" },
+              "loc_reg_mono_fine": { "type": "double" },
+              "loc_reg_mono_coarse": { "type": "double" },
+              "loc_reg_matt_painted": { "type": "double" },
+              "loc_reg_impressed": { "type": "double" },
+              "loc_reg_black_glazed": { "type": "double" }
+            }
+          },
+          "light": {
+            "properties": {
+              "local_mono_fine": { "type": "double" },
+              "local_mono_coarse": { "type": "double" },
+              "local_matt_painted": { "type": "double" },
+              "local_impressed": { "type": "double" },
+              "local_black_glazed": { "type": "double" },
+              "regional_mono_fine": { "type": "double" },
+              "regional_mono_coarse": { "type": "double" },
+              "regional_matt_painted": { "type": "double" },
+              "regional_impressed": { "type": "double" },
+              "regional_black_glazed": { "type": "double" },
+              "loc_reg_mono_fine": { "type": "double" },
+              "loc_reg_mono_coarse": { "type": "double" },
+              "loc_reg_matt_painted": { "type": "double" },
+              "loc_reg_impressed": { "type": "double" },
+              "loc_reg_black_glazed": { "type": "double" }
+            }
+          },
+          "storage_non_edible": {
+            "properties": {
+              "local_mono_fine": { "type": "double" },
+              "local_mono_coarse": { "type": "double" },
+              "local_matt_painted": { "type": "double" },
+              "local_impressed": { "type": "double" },
+              "local_black_glazed": { "type": "double" },
+              "regional_mono_fine": { "type": "double" },
+              "regional_mono_coarse": { "type": "double" },
+              "regional_matt_painted": { "type": "double" },
+              "regional_impressed": { "type": "double" },
+              "regional_black_glazed": { "type": "double" },
+              "loc_reg_mono_fine": { "type": "double" },
+              "loc_reg_mono_coarse": { "type": "double" },
+              "loc_reg_matt_painted": { "type": "double" },
+              "loc_reg_impressed": { "type": "double" },
+              "loc_reg_black_glazed": { "type": "double" }
+            }
+          },
+          "unidentified": {
+            "properties": {
+              "local_mono_fine": { "type": "double" },
+              "local_mono_coarse": { "type": "double" },
+              "local_matt_painted": { "type": "double" },
+              "local_impressed": { "type": "double" },
+              "local_black_glazed": { "type": "double" },
+              "regional_mono_fine": { "type": "double" },
+              "regional_mono_coarse": { "type": "double" },
+              "regional_matt_painted": { "type": "double" },
+              "regional_impressed": { "type": "double" },
+              "regional_black_glazed": { "type": "double" },
+              "loc_reg_mono_fine": { "type": "double" },
+              "loc_reg_mono_coarse": { "type": "double" },
+              "loc_reg_matt_painted": { "type": "double" },
+              "loc_reg_impressed": { "type": "double" },
+              "loc_reg_black_glazed": { "type": "double" }
+            }
+          }
+        }
+      }
+    }
+  }
+}
