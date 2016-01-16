@@ -36,13 +36,13 @@ def newRandomSpecialCategoryBlock():
   rand = random.uniform(0, 1)
   if rand > 0.8:
     return {
-      'archaica': newRandomValue(),
+      'archaika': newRandomValue(),
       'defunct': newRandomValue(),
       'miniatures': newRandomValue()
     }
   else:
     return {
-      'archaica': 0,
+      'archaika': 0,
       'defunct': 0,
       'miniatures': 0
     }
@@ -56,27 +56,35 @@ def newRandomRow():
   row.update(newRandomSpecialCategoryBlock())
   return row
 
-# create dummy assemblage fingerprint
-assemblage = {
-  'sector': '',
-  'layer_context': '',
-  'date': {
-    'from': 0,
-    'to': 0
-  },
-  'fp_ceramic': {
-    'longterm_storage': newRandomRow(),
-    'shortterm_storage': newRandomRow(),
-    'preparation_cooking': newRandomRow(),
-    'food': newRandomRow(),
-    'mixing_drinks': newRandomRow(),
-    'serving_drinks': newRandomRow(),
-    'consuming_drinks': newRandomRow(),
-    'perfumes_fragrances': newRandomRow(),
-    'light': newRandomRow(),
-    'storage_non_edible': newRandomRow(),
-    'unidentified': newRandomRow()
+# Creates a new random assemblage fingerprint
+def newRandomAssemblage():
+  return {
+    'sector': '',
+    'layer_context': '',
+    'date': {
+      'from': 0,
+      'to': 0
+    },
+    'fp_ceramic': {
+      'longterm_storage': newRandomRow(),
+      'shortterm_storage': newRandomRow(),
+      'preparation_cooking': newRandomRow(),
+      'food': newRandomRow(),
+      'mixing_drinks': newRandomRow(),
+      'serving_drinks': newRandomRow(),
+      'consuming_drinks': newRandomRow(),
+      'perfumes_fragrances': newRandomRow(),
+      'light': newRandomRow(),
+      'storage_non_edible': newRandomRow(),
+      'unidentified': newRandomRow()
+    }
   }
-}
 
-print(json.dumps(assemblage, indent=2))
+assemblages = [
+  newRandomAssemblage(),
+  newRandomAssemblage(),
+  newRandomAssemblage(),
+  newRandomAssemblage()
+]
+
+print(json.dumps(assemblages, indent=2))

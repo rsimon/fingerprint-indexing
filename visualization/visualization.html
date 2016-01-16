@@ -1,0 +1,110 @@
+<html>
+  <head>
+    <title>Fingerprint Rendering Demo</title>
+    <style>
+      html, body {
+        background-color:#f2f2f2;
+      }
+
+      .chart-container {
+        margin-bottom:10px;
+      }
+
+      svg {
+        background-color: #fff;
+        border:1px solid #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="chart0" class="chart-container"></div>
+    <div id="chart1" class="chart-container"></div>
+    <div id="chart2" class="chart-container"></div>
+    <div id="chart3" class="chart-container"></div>
+
+    <script src="d3.v3.min.js"></script>
+    <script src="dimple.v2.1.6.min.js"></script>
+    <script src="data.js"></script>
+    <script type="text/javascript">
+      var LABELS = {
+        'longterm_storage': 'Long-term Storage',
+        'shortterm_storage': 'Short-term Storage',
+        'preparation_cooking': 'Preparation/Cooking',
+        'food': 'Serving and Consuming Food',
+        'mixing_drinks': 'Mixing Drinks',
+        'serving_drinks': 'Serving Drinks',
+        'consuming_drinks': 'Consumption of Drinks',
+        'perfumes_fragrances': 'Perfumes and Fragrances',
+        'light': 'Consumption of Light',
+        'storage_non_edible': 'Storage of Non-Edibles',
+        'unidentified': 'Unidentified Fragments',
+
+        'local_mono_fine': 'Local Mono Fine',
+        'local_mono_coarse': 'Local Mono Coarse',
+        'local_matt_painted': 'Local Matt Paint',
+        'local_impressed': 'Local Impressed/Incised',
+        'local_black_glazed': 'Local Black-Glazed',
+        'regional_mono_fine': 'Regional Mono Fine',
+        'regional_mono_coarse': 'Regional Mono Coarse',
+        'regional_matt_painted': 'Regional Matt Paint',
+        'regional_impressed': 'Regional Impressed/Incised',
+        'regional_black_glazed': 'Regional Black-Glazed',
+        'loc_reg_mono_fine': 'Local or Regional Mono Fine',
+        'loc_reg_mono_coarse': 'Local or Regional Mono Coarse',
+        'loc_reg_matt_painted': 'Local or Regional Matt Paint',
+        'loc_reg_impressed': 'Local or Regional Impressed/Incised',
+        'loc_reg_black_glazed': 'Local or Regional Black-Glazed',
+        'import_mono_fine': 'Import Mono Fine',
+        'import_mono_coarse': 'Import Mono Coarse',
+        'import_matt_painted': 'Import Matt Paint',
+        'import_impressed': 'Import Impressed/Incised',
+        'import_black_glazed': 'Import Black-Glazed',
+        'archaika': 'Archaika',
+        'defunct': 'Defunct.',
+        'miniatures': 'Miniatures'
+      };
+
+      var translateLabel = function(key) {
+        var label = LABELS[key];
+        if (label)
+          return label;
+        else
+          return key;
+      };
+
+      var flattenData = function(data) {
+        var fingerprint = data.fp_ceramic,
+            classes, rows = [];
+
+        for (var fGroup in fingerprint) {
+          classes = fingerprint[fGroup];
+          for (var cls in classes) {
+            rows.push({ 'Functional Group': translateLabel(fGroup), 'Class': translateLabel(cls), 'Magnitude': classes[cls] });
+          }
+        }
+
+        return rows;
+      };
+
+      var render = function(divId, fingerprint) {
+        var svg = dimple.newSvg(divId, 1880, 300);
+        var chart = new dimple.chart(svg, flattenData(fingerprint));
+        chart.setBounds(60, 80, 1790, 180)
+        var x = chart.addCategoryAxis('x', [ 'Functional Group', 'Class' ]);
+        chart.addMeasureAxis('y', 'Magnitude');
+        var series = chart.addSeries('Class', dimple.plot.bar);
+        series.addOrderRule('Class');
+        x.addOrderRule(['Long-term Storage', 'Short-term Storage', 'Preparation/Cooking',
+          'Serving and Consuming Food', 'Mixing Drinks', 'Serving Drinks', 'Consumption of Drinks',
+          'Perfumes and Fragrances', 'Consumption of Light', 'Storage of Non-Edibles',
+          'Unidentified Fragments' ]);
+        chart.addLegend(55, 20, 1700, 60);
+        chart.draw();
+      };
+
+      for (var i=0; i<data.length; i++) {
+        render('#chart' + i, data[i]);
+      }
+    </script>
+  </body>
+</html>
